@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	"zanuarmirza/vault"
 	"zanuarmirza/vault/pb"
+	vault "zanuarmirza/vault/service"
 
 	grpctransport "github.com/go-kit/kit/transport/grpc"
 	"google.golang.org/grpc"

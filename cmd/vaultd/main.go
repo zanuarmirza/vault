@@ -11,8 +11,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-	"zanuarmirza/vault"
 	"zanuarmirza/vault/pb"
+	vault "zanuarmirza/vault/service"
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/juju/ratelimit"

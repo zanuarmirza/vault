@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 	"time"
-	"zanuarmirza/vault"
 	grpcclient "zanuarmirza/vault/client/grpc"
+	vault "zanuarmirza/vault/service"
 
 	"google.golang.org/grpc"
 )
