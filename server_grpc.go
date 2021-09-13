@@ -1,7 +1,7 @@
 package vault
 
 import (
-	"vault/pb"
+	"zanuarmirza/vault/pb"
 
 	grpctransport "github.com/go-kit/kit/transport/grpc"
 	"golang.org/x/net/context"
@@ -26,6 +26,7 @@ func NewGRPCServer(ctx context.Context, endpoints Endpoints) pb.VaultServer {
 type grpcServer struct {
 	hash     grpctransport.Handler
 	validate grpctransport.Handler
+	pb.UnimplementedVaultServer
 }
 
 func (s *grpcServer) Hash(ctx context.Context, r *pb.HashRequest) (*pb.HashResponse, error) {

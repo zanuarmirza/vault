@@ -11,8 +11,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-	"vault"
-	"vault/pb"
+	"zanuarmirza/vault"
+	"zanuarmirza/vault/pb"
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/juju/ratelimit"
@@ -32,6 +32,8 @@ func NewTokenBucketLimiter(tb *ratelimit.Bucket) endpoint.Middleware {
 		}
 	}
 }
+
+// grpc server
 func main() {
 	var (
 		httpAddr = flag.String("http", ":8080", "http listen address")

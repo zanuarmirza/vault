@@ -7,12 +7,13 @@ import (
 	"log"
 	"os"
 	"time"
-	"vault"
-	grpcclient "vault/client/grpc"
+	"zanuarmirza/vault"
+	grpcclient "zanuarmirza/vault/client/grpc"
 
 	"google.golang.org/grpc"
 )
 
+// client server
 func main() {
 	var (
 		grpcAddr = flag.String("addr", ":8081", "gRPC address")
